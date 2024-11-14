@@ -1,0 +1,84 @@
+/* Contenedor principal del header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Asegura que el padding no cause desbordamiento */
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño del logo según necesites */
+}
+
+/* Menú de navegación */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; /* Empuja los elementos hacia los extremos */
+    justify-content: center;
+}
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #0070f3;
+}
+
+/* Contenedor de búsqueda e iconos */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+/* Icono de búsqueda */
+.search-icon {
+    color: #666;
+    font-size: 1rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Iconos de acciones */
+.action-icon {
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.action-icon:hover {
+    color: #0070f3;
+}

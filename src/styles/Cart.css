@@ -1,0 +1,139 @@
+/* Contenedor principal del carrito */
+.cart-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada producto en el carrito */
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.cart-item-info {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.cart-item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-item-price {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-quantity button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #005bb5;
+}
+
+/* Botón para eliminar productos */
+.remove-item-button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-item-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Resumen del carrito */
+.cart-summary {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.checkout-button {
+    background-color: #00b51e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #008f1b;
+    color: #666666;
+}
+
+
+.cart-item-quantity button {
+    background-color: #c0c0c000;
+    color: rgb(78, 78, 78);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px #33333352;
+}
+
+.cart-item-quantity button:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+.remove-item-button {
+    background-color: #c5c5c5;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.remove-item-button:hover {
+    background-color: #ff273d;
+    color: #ddd;
+}

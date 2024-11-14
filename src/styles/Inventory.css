@@ -1,0 +1,149 @@
+
+.title-container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Centers the table horizontally */
+    padding: 20px; /* Adds some space around the table */
+}
+
+
+thead th {
+    background-color: #f4f6f9;
+    color: #5f6368;
+    padding: 12px;
+    font-weight: 600;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+    font-size: 14px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-bottom: 20px;
+}
+
+button.createproduct {
+    background-color: #1a73e8;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 10px auto 0 auto; /* Esto centra el botón horizontalmente */
+    display: block; /* Asegura que el botón se comporte como un bloque */
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #1a73e8;
+    border: solid 1px #1a73e8;
+}
+/* Modal overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Set a max-width for a compact look */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Space between elements */
+}
+
+/* Form input styling */
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content input[type="file"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc8e;
+    border-radius: 4px;
+}
+.modal-content h2 {
+    text-align: center;
+}
+
+
+/* Button styling */
+.modal-content button {
+    width: 60%;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 10px auto 0 auto; /* Esto centra el botón horizontalmente */
+    display: block; /* Asegura que el botón se comporte como un bloque */
+}
+
+.modal-content button:first-of-type {
+    background-color: #007bff; /* Blue for primary button */
+    color: white;
+}
+
+.modal-content button:hover {
+    background-color: #ffffff;
+    color: #1a73e8;
+    border: solid 1px #1a73e8;
+}
+
+.modal-content button:last-of-type {
+    background-color: #6c757d; /* Gray for cancel button */
+    color: white;
+}
+
+.modal-content button:last-of-type:hover {
+    background-color: #ffffff;
+    color: #1a73e8;
+    border: solid 1px #1a73e8;
+}

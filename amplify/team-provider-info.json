@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-knexus-dev-b38c0-authRole",
+      "UnauthRoleArn": "arn:aws:iam::221082206527:role/amplify-knexus-dev-b38c0-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::221082206527:role/amplify-knexus-dev-b38c0-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-knexus-dev-b38c0-deployment",
+      "UnauthRoleName": "amplify-knexus-dev-b38c0-unauthRole",
+      "StackName": "amplify-knexus-dev-b38c0",
+      "StackId": "arn:aws:cloudformation:us-east-1:221082206527:stack/amplify-knexus-dev-b38c0/b3531c60-9b1d-11ef-9181-12ceceedd8d5",
+      "AmplifyAppId": "d3oftk0blmefwg"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3oftk0blmefwg",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
