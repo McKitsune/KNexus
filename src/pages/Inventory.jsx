@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchProductos } from '../services/api'; // Usa fetchProductos de api.js
+import api, { fetchProductos } from '../services/api'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Inventory.css';
@@ -56,7 +56,7 @@ const Inventory = () => {
             try {
                 const uploadURLResponse = await api.get(`/s3/upload-url?fileName=${file.name}`);
                 const uploadURL = uploadURLResponse.data.url;
-
+    
                 await fetch(uploadURL, {
                     method: 'PUT',
                     body: file,
@@ -64,7 +64,7 @@ const Inventory = () => {
                         'Content-Type': file.type
                     }
                 });
-
+    
                 imageUrls.push(uploadURL.split('?')[0]);
             } catch (error) {
                 console.error('Error al subir imagen a S3:', error);
