@@ -19,5 +19,23 @@
         }
       }
     }
+  },
+  "temp": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-knexus-temp-455e4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::221082206527:role/amplify-knexus-temp-455e4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::221082206527:role/amplify-knexus-temp-455e4-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-knexus-temp-455e4-deployment",
+      "UnauthRoleName": "amplify-knexus-temp-455e4-unauthRole",
+      "StackName": "amplify-knexus-temp-455e4",
+      "StackId": "arn:aws:cloudformation:us-east-1:221082206527:stack/amplify-knexus-temp-455e4/222e76a0-a43f-11ef-8023-0affc837c39d",
+      "AmplifyAppId": "d3oftk0blmefwg"
+    },
+    "categories": {
+      "auth": {
+        "knexusAuth": {}
+      }
+    }
   }
 }

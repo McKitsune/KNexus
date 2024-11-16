@@ -1,43 +1,22 @@
 {
+  "auth": {
+    "knexusAuth": {
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
   "hosting": {
     "amplifyhosting": {
+      "appId": "d3oftk0blmefwg",
       "providerPlugin": "awscloudformation",
       "service": "amplifyhosting",
       "type": "manual"
     }
   },
-  "parameters": {
-    "AMPLIFY_hosting_amplifyhosting_appId": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    },
-    "AMPLIFY_hosting_amplifyhosting_type": {
-      "usedBy": [
-        {
-          "category": "hosting",
-          "resourceName": "amplifyhosting"
-        }
-      ]
-    }
-  }
-  {
-    "auth": {
-      "knexusAuth": {
-        "service": "Cognito",
-        "providerPlugin": "awscloudformation",
-        ...
-      }
-    },
-    "storage": {
-      "knexusS3": {
-        "service": "S3",
-        "providerPlugin": "awscloudformation",
-        ...
-      }
+  "storage": {
+    "knexusS3": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3"
     }
   }
 }
